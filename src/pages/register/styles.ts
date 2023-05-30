@@ -15,7 +15,23 @@ export const Header = styled("header", {
 
   [`> ${Text}`]: {
     lineHeight: "$base",
+    marginBottom: "$6",
   },
 });
 
-export const Form = styled(Box, {});
+export const Form = styled(Box, {
+  marginTop: "$6",
+  gap: "$4",
+  display: "flex",
+  flexDirection: "column",
+
+  label: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "$2",
+  },
+});
+
+export const FormError = styled(Text, {
+  color: "#f75a68",
+});
